@@ -181,4 +181,4 @@ cd /tmp/kafka-client/dev/examples/clients/cloud/python/
 [3]: https://docs.confluent.io/platform/current/tutorials/examples/clients/docs/python.html
 [4]: https://docs.microsoft.com/en-us/sql/connect/python/pymssql/step-3-proof-of-concept-connecting-to-sql-using-pymssql?view=sql-server-ver15
 
-[architecture]: hhttps://github.com/imendozah/kafka-cli-py/raw/master/images/architecture.png "Logo Title Text 2"
+[architecture]: https://github.com/imendozah/kafka-cli-py/raw/master/images/architecture.png "Logo Title Text 2"
