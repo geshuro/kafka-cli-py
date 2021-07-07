@@ -1,0 +1,4 @@
+requests
+certifi
+confluent-kafka[avro,json,protobuf]>=1.7.0
+cx_Oracle==8.2.1
