@@ -39,6 +39,15 @@ Install the required libraries for the development of producers and consumers.
 pip3 install -r requirements.txt
 wget https://files.pythonhosted.org/packages/24/f9/bfed0e66f354e710399009109f89b3046a7a96373e036772b4cc32491189/pymssql-2.2.1-cp39-cp39-manylinux1_x86_64.whl#sha256=a67b45a91203a35251d427cd35a316e878a27d275f20a6ae815a0db6bb0769de
 pip3 install pymssql-2.2.1-cp39-cp39-manylinux1_x86_64.whl
+
+wget https://download.oracle.com/otn_software/linux/instantclient/211000/instantclient-basic-linux.x64-21.1.0.0.0.zip
+mkdir -p /opt/oracle
+cd /opt/oracle
+unzip instantclient-basic-linux.x64-21.1.0.0.0.zip
+yum install libaio
+sudo sh -c "echo /opt/oracle/instantclient_21_1 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+sudo ldconfig
+export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1:$LD_LIBRARY_PATH
 ```
 
 requeriments.txt

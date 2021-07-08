@@ -29,10 +29,10 @@ if __name__ == '__main__':
     # Process messages
     # Connection SQL Server
     conn = pymssql.connect(
-        host=r'clanfbicw01.sqm.local',
-        user=r'sqmdom\USER',
+        host=r'HOSTNAME',
+        user=r'NAMEDOMAIN\USER',
         password='PASS',
-        database='test'
+        database='NAMEDATABASE'
     )
     cursor = conn.cursor()
     try:

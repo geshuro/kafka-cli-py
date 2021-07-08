@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     # Connection Oracle
     connection = cx_Oracle.connect(user="USER", password="PASS",
-                                   dsn="172.21.2.31/dsqm")
+                                   dsn="HOSTNAME/SERVICE")
     cursor = connection.cursor()
     # Get 10 rows
     cursor.execute("""
